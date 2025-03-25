@@ -75,20 +75,23 @@ a {
   border: 2px solid var(--primary-color);
   height: 60px;
   width: 60px;
-  padding: 14px;
   border-radius: 20px;
   display: block;
   margin: auto;
   transform-style: preserve-3d;
   animation: rotate-y-svg 10s ease-in-out infinite;
+   display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .social-icons a:hover {
   animation: none;
 }
 
-button {
+.button {
   font-size: 22px;
+  display: inline-block;
   padding: 18px 22px;
   border: 2px solid var(--primary-color);
   border-radius: 20px;
@@ -102,7 +105,7 @@ button {
 }
 
 /* Background Fill Effect */
-button::after {
+.button::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -114,16 +117,16 @@ button::after {
 }
 
 /* Hover Effects */
-button:hover {
+.button:hover {
   color: var(--text-color);
   transform: scale(1.05);
 }
 
-button:hover::before {
+.button:hover::before {
   transform: scale(1.1);
 }
 
-button:hover::after {
+.button:hover::after {
   transform: translateX(0);
 }
 
@@ -319,11 +322,22 @@ button:hover::after {
   .title {
     font-size: 36px;
   }
+
+  #badge {
+    position: static;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 22px;
+  }
+
+  .head_title {
+    text-align: center;
+    margin-bottom: 44px;
+  }
   
   .social-icons a {
     height: 50px;
     width: 50px;
-    padding: 9px;
     border-radius: 16px;
   }
   
@@ -341,7 +355,6 @@ button:hover::after {
   .social-icons a {
     height: 36px;
     width: 36px;
-    padding: 7px;
     border-radius: 12px;
   }
   
@@ -372,13 +385,6 @@ button:hover::after {
   #badge {
     top: -32px;
     right: 0;
-  }
-  
-  .n_info {
-    height: 40px;
-    width: 40px;
-    min-width: 40px;
-    font-size: 18px;
   }
   
   .info {

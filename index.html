@@ -4,24 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Finsavvy</title>
     <link rel="stylesheet" href="index.css">
+    <meta name="description" content="Finsavvy" />
+    <meta name="keywords" content="Finsavvy, news, uzcard" />
+    <meta name="robots" content="index" />
+    <meta name="author" content="Finsavvy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Finsavvy" />
+    <meta property="og:description" content="Finsavvy" />
+    <meta property="og:image" content="./assets/logo.svg" />
+    <meta property="og:url" content="./assets/logo.svg" />
+    <meta name="twitter:card" content="./assets/logo.svg" />
+    <link rel="canonical" href="./assets/logo.svg" />
+    <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon">
 </head>
 
 <body>
-    <header class="container">
-        <nav class="flex justify-between items-center p_22">
-            <img draggable="false" id="logo" src="./assets/logo.svg" alt="finsavvy">
-            <div class="social-icons">
-                <img draggable="false" src="./assets/telegram.svg" alt="telegram">
-                <img draggable="false" src="./assets/facebook.svg" alt="facebook">
-                <img draggable="false" src="./assets/instagram.svg" alt="instagram">
-            </div>
-        </nav>
+    <div class="container">
+        <header class="nav">
+            <nav class="flex justify-between items-center p_22">
+                <img draggable="false" id="logo" src="./assets/logo.svg" alt="finsavvy">
+                <div class="social-icons">
+                    <a href="#"><img draggable="false" src="./assets/telegram.svg" alt="telegram"></a>
+                    <a href="#"><img draggable="false" src="./assets/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img draggable="false" src="./assets/instagram.svg" alt="instagram"></a>
+                </div>
+            </nav>
+        </header>
         <main>
             <section class="mainhead relative p_22">
                 <h1 class="title">Как безопасно организовать свои финансы с помощью UZCARD</h1>
-                <button>Подкасты на YouTube</button>
+                <a href="#"><button>Подкасты на YouTube</button></a>
                 <img id="badge" src="./assets/badge.svg" alt="">
             </section>
             <section class="materials">
@@ -69,8 +83,8 @@
                     </div>
                 </div>
                 <div class="flex flexwrap items-center gap_22 mt-40">
-                    <button>Показать больше</button>
-                    <button>Новости на Repost</button>
+                    <a href="#"><button>Показать больше</button></a>
+                    <a href="#"><button>Новости на Repost</button></a>
                 </div>
             </section>
         </main>
@@ -79,22 +93,29 @@
                 <img draggable="false" src="./assets/repost.svg" alt="facebook">
             </div>
             <div class="footer items-center justify-between gap_44">
-                <div class="flex items-center gap_22 info">
+                <a href="#" class="flex items-center gap_22 info">
                     <p class="n_info f_22 floatl">18+</p>
                     <p class="f_14 floatl">2017-2025 © Новости Узбекистана — Repost.uz. Использование материалов сайта
                         Repost.uz разрешается
                         в любом объеме с обязательным указанием активной ссылки на сайт максимум во втором абзаце
                         новости и названия с сайта в виде «Repost.uz» или «Репост.уз». Учредитель: ООО «DT MEDIA CO»
                         Адрес: г. Ташкент, Мирзо-Улугбекский район, ул. Олимлар, дом 43.</p>
-                </div>
+                </a>
                 <ul class="flex flexwrap items-center flist gap_44 min-w">
-                    <li>Реклама</li>
-                    <li>Спецпроекты</li>
-                    <li>Контакты редакции</li>
+                    <li>
+                        <a href="#">Реклама</a>
+                    </li>
+                    <li>
+                        <a href="#">Спецпроекты</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты редакции</a>
+                    </li>
                 </ul>
             </div>
         </footer>
-    </header>
+    </div>
 </body>
 <script src="index.js"></script>
+
 </html>

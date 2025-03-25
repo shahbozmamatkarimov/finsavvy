@@ -12,7 +12,7 @@ window.addEventListener("scroll", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".materials .list div");
+    const elements = document.querySelectorAll(".materials .list a");
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
